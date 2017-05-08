@@ -61,6 +61,11 @@ class Overview extends React.Component {
                         )}
                     </div>
                 }
+                {
+                    !this.props.loading && !this.props.recipes.count &&
+                        <h1 styleName="no-results">No recipes found. Please try again using different ingredients.</h1>
+                }
+
             </div>
         );
     }
