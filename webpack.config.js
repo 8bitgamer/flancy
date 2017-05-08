@@ -76,6 +76,7 @@ module.exports = {
             server: path.resolve(__dirname, './src/server'),
             styles: path.resolve(__dirname, './src/app/styles'),
             vectors: path.resolve(__dirname, './src/app/static/vectors'),
+            projectConfig: path.resolve(__dirname, './project.config.js'),
         },
     },
 };
