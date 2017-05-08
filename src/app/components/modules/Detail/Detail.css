@@ -122,6 +122,13 @@
     display: block;
 }
 
+.no-results {
+	font-family: 'Playfair Display', serif;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 100;
+}
+
 @keyframes makeVisible {
     from {
         opacity: 0;

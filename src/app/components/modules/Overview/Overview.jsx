@@ -63,7 +63,7 @@ class Overview extends React.Component {
                 }
                 {
                     !this.props.loading && !this.props.recipes.count &&
-                        <h1 styleName="no-results">No recipes found. Please try again using different ingredients.</h1>
+                        <h1 styleName="no-results">No recipes found. You should probably buy ingredients that are less exotic.</h1>
                 }
 
             </div>
