@@ -22,6 +22,8 @@ module.exports = {
 
 `$ npm start`
 
+Go to <http://localhost:3000/> in your browser
+
 ## Credit
 
 Special thanks to [Jorn](https://github.com/JBostelaar) for creating the boilerplate this app was built on.
