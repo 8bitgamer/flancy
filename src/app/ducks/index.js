@@ -1,1 +1,1 @@
-export test from './test';
+export recipes from './recipes';

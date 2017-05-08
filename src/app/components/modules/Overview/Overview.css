@@ -1,0 +1,41 @@
+.wrapper {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+    background-size: cover;
+    background-position: center center;
+    overflow: scroll;
+}
+
+.list {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	min-width: 0;
+	padding: 0px 75px 25px 75px;
+	justify-content: center;
+	opacity: 0;
+}
+
+.visible {
+	opacity: 1 !important;
+	animation: makeVisible 0.5s;
+}
+
+.searchicon {
+	height: 34px;
+	margin: 40px auto;
+    display: block;
+    opacity: 0;
+}
+
+@keyframes makeVisible {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

@@ -23,7 +23,7 @@ app.use(webpackHotMiddleware(compiler));
 app.get('*', function response(req, res) {
     res.send(`
         <meta charset="utf-8">
-        <title>React Redux Boilerplate</title>
+        <title>Flancy</title>
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 

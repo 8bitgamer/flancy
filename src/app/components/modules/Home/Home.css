@@ -1,0 +1,25 @@
+.wrapper {
+	width: 100%;
+	height: 100%;
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+}
+
+.title {
+	font-family: 'Playfair Display', serif;
+	display: inline-block;
+	font-size: 150px;
+	font-weight: 100;
+}
+
+.dragdown {
+	height: 0;
+	overflow: hidden;
+	transition: height 0.5s;
+}
+
+.dragdown-opened {
+	height: 100%;
+	transition: height 0.5s;
+}

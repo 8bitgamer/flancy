@@ -1,14 +1,22 @@
 import App from 'app/components/App';
-import { Test } from 'app/components/modules';
+import { Home, Overview, Detail } from 'app/components/modules';
 
 export default [
     {
         component: App,
         childRoutes: [
             {
-                component: Test,
+                component: Home,
                 path: '/',
             },
+            {
+                component: Overview,
+                path: '/overview/:query',
+            },
+            {
+                component: Detail,
+                path: '/detail/:id',
+            }
         ],
     },
 ];

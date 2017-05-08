@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+
+.search {
+    width: 50%;
+    border: none;
+    border-bottom: 1px solid gray;
+    font-size: 34px;
+    background: transparent;
+    margin: 30px;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+}
+
+.search:focus{
+	outline: 0;
+}
+
+.searchbtn {
+    border: none;
+    background: transparent;
+}
+
+.searchicon {
+	height: 34px;
+}

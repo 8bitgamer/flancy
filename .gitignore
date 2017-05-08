@@ -12,3 +12,4 @@ node_modules/
 ehthumbs.db
 Thumbs.db
 npm-debug.log
+project.config.js

@@ -1,7 +1,8 @@
 import { combineReducers, createStore, applyMiddleware, compose } from 'redux';
-import * as appReducers from 'app/ducks';
+import { call } from 'redux-saga/effects';
 import createSagaMiddleware from 'redux-saga';
-import sagas from 'app/sagas';
+import * as appReducers from 'ducks';
+import * as appSagas from 'sagas';
 
 const sagaMiddleware = createSagaMiddleware();
 let middleware = applyMiddleware(sagaMiddleware);
@@ -17,4 +18,6 @@ export default createStore(combineReducers({
     ...appReducers,
 }), middleware);
 
-sagaMiddleware.run(sagas);
+sagaMiddleware.run(function *rootSaga() {
+    yield Object.values(appSagas).map(saga => call(saga));
+});
